@@ -37,6 +37,5 @@ export interface useFuseParams<T> extends IFuseOptions<T> {
    */
   searchQuery: string;
   items: T[];
-  index:JSON;
   limit?: number;
 }

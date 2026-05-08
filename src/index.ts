@@ -1,1 +1,1 @@
-export { useFuse } from './useFuse';
+export { useFuse } from "./useFuse";

@@ -49,10 +49,10 @@ interface CacheConfig {
    * Max number of cached items
    *
    * @remarks
-   * Each search term trigger new query key and new caching better to keep it 
+   * Each search term trigger new query key and new caching better to keep it
    * low for heavy lists for memory efficient
    *
-   * @default 3 
+   * @default 3
    */
   maxCacheLimit?: number;
 }
@@ -62,5 +62,5 @@ export interface useFuseTanstackQueryParams<T> extends useFuseParams<T> {
   /**
    * Additional query key for more precise tracking
    */
-  queryKey?: string
+  queryKey?: string;
 }

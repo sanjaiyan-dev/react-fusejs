@@ -3,8 +3,18 @@
   "version": "0.1.0",
   "description": "High-performance React hook for Fuse.js with React Compiler support.",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./tanstack": {
+      "types": "./dist/tanstack.d.ts",
+      "import": "./dist/tanstack.mjs",
+      "require": "./dist/tanstack.js"
+    }
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
