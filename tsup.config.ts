@@ -8,6 +8,7 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   splitting: false,
+  dts: true,
   external: ["react", "react-dom", "@tanstack/react-query"],
   esbuildPlugins: [
     babel({
