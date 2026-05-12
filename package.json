@@ -18,7 +18,9 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "changeset": "changeset",
+    "release": "changeset publish"
   },
   "peerDependencies": {
     "@tanstack/react-query": "^5.0.0",
@@ -34,6 +36,7 @@
     "@babel/core": "^7.24.5",
     "@babel/preset-react": "^7.28.5",
     "@babel/preset-typescript": "^7.24.1",
+    "@changesets/cli": "^2.31.0",
     "@tanstack/react-query": "^5.100.9",
     "@types/react": "^18.3.2",
     "babel-plugin-react-compiler": "^1.0.0",
@@ -45,5 +48,27 @@
   },
   "dependencies": {
     "react-compiler-runtime": "^1.0.0"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjaiyan-dev/react-fusejs.git"
+  },
+  "keywords": [
+    "react",
+    "fuse.js",
+    "fuzzy-search",
+    "search-hook",
+    "tanstack-query",
+    "react-query",
+    "performance",
+    "react-compiler"
+  ],
+  "author": "Sanjaiyan Parthipan",
+  "license": "MIT",
+  "sideEffects": false
 }
